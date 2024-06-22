@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVogue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            position: relative;
+            background-image: url('https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        header p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        nav {
+            background-color: #2d6a4f;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            color: #2d6a4f;
+        }
+        #about {
+            background-color: #e9f5f0;
+            border-top: 2px solid #2d6a4f;
+            border-bottom: 2px solid #2d6a4f;
+        }
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        #shop {
+            background-color: #f0f0f0;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 300px;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            padding: 15px;
+            font-size: 1.5em;
+            color: #2d6a4f;
+        }
+        .product p {
+            padding: 0 15px 15px;
+            font-size: 1em;
+            color: #666;
+        }
+        #contact {
+            background-color: #e9f5f0;
+        }
+        footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EcoVogue</h1>
+        <p>Stylish Clothing from Eco & Recycled Materials</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#shop">Shop Now</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="home">
+        <h2>Welcome to EcoVogue</h2>
+        <p>Your destination for sustainable fashion. Explore our collection of stylish clothing made from eco-friendly and recycled materials.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At EcoVogue, we believe in fashion with a purpose. Our mission is to create stylish, high-quality clothing that is kind to the planet. We use eco-friendly materials and sustainable practices to minimize our environmental impact. Join us in making a difference, one outfit at a time.</p>
+    </section>
+    <section id="shop">
+        <h2>Shop Now</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/85/ec/b0/85ecb0a4b9db2b74bc1cf65d9db45a52.jpg" alt="Denim Jackets">
+                <h3>Denim Jackets</h3>
+                <p>Our denim jackets are made from recycled materials, offering a classic look with a modern, eco-friendly twist. Durable and stylish, perfect for any wardrobe.</p>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/4b/78/40/4b78404fa63617a35afe331f01161885.jpg" alt="Organic Cotton Solid T-shirts">
+                <h3>Organic Cotton Solid T-shirts</h3>
+                <p>Soft and comfortable, these t-shirts are made from 100% organic cotton. Available in various colors, they are a versatile addition to your sustainable wardrobe.</p>
+            </div>
+            <div class="product">
+                <img src="https://img.stablecog.com/insecure/256w/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vNzhhYTAyMTgtYmJlYi00NDE5LTljYjUtNWUxOTY2ZWQ3N2U2LmpwZWc.webp" alt="Breathable Sneakers">
+                <h3>Breathable Sneakers</h3>
+                <p>Designed for comfort and performance, our breathable sneakers are made from recycled materials. Perfect for everyday wear, they combine style and sustainability.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out to us at contact@ecovogue.com or call us at (123) 456-7890.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 EcoVogue. All rights reserved.</p>
+    </footer>
+</body>
+</html>
